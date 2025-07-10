@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
+    <>
     <div className="flex h-auto justify-around bg-gray-700 text-white font-serif font-semibold">
       <div id="left" className="">
         <div className="flex flex-col mt-3 mb-2">
@@ -29,8 +30,12 @@ const Footer = () => {
             </div>
         
       </div>
-      <div id="bottom"></div>
+     
     </div>
+     <div id="bottom" className="overflow-auto bg-gray-400 text-black font-serif font-bold ">
+        <h4 className="ml-4 mt-1 mb-1">All rights reserved with @ VibeStream 2025</h4>
+      </div>
+      </>
   );
 };
 

@@ -5,9 +5,13 @@ import Playlist from './Pages/Playlist.jsx'
 import FavSong from './Pages/FavSong.jsx'
 import Mission from './Pages/Mission.jsx'
 import Vision from './Pages/Vision.jsx'
+import { MoodProvider } from './Context/MoodContext.jsx'
+import { SongProvider } from './Context/FavouriteContext.jsx'
 const App = () => {
   return (
     <>
+    <SongProvider>
+    <MoodProvider>
      <BrowserRouter>
      <Routes>
       <Route path='/' element={<Landing />} />
@@ -17,7 +21,8 @@ const App = () => {
       <Route path ='/vision' element={<Vision/>} />
      </Routes>
      </BrowserRouter>
-      
+     </MoodProvider>
+     </SongProvider> 
     </>
   )
 }
