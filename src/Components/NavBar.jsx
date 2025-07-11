@@ -12,7 +12,7 @@ const NavBar = () => {
             <div id='right' className='flex gap-8 mr-12 mt-6'>
                 <Link to='/'>Home</Link>
                 <Link to='/playlist'>Playlist</Link>
-                <Link to='/fav' className='text-red-400 text-3xl'><FaHeart/></Link>
+                <Link to='/fav' >See Favourites</Link>
             </div>
         </div>
       

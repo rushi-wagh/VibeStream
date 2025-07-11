@@ -8,7 +8,7 @@ const Landing = () => {
     <>
       <NavBar />
       <Hero/>
-      <Footer/>
+   
       
       
     </>

@@ -10,8 +10,8 @@ const Hero = () => {
      navigate('playlist')
   }
   return (
-    <div className="h-140 bg-white">
-      <div className=" h-100 bg-gradient-to-br from-orange-600 via-green-600 to-teal-500 flex items-center justify-center flex-col gap-3">
+    <div className="h-220 bg-white">
+      <div className="ml-25 mr-25 mt-10 rounded-sm h-120 bg-gradient-to-br from-orange-600 via-green-600 to-teal-500 flex items-center justify-center flex-col gap-3">
         <h2 className="font-bold text-xl text-gray-900 ">Select your Mood</h2>
         <p className="font-bold text-gray-900">
           Vibe Music according to mood with VibeStream

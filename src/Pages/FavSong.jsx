@@ -3,8 +3,12 @@ import { useSong } from "../Context/FavouriteContext.jsx";
 import NavBar from "../Components/NavBar.jsx";
 
 const FavSong = () => {
-  const { SongInfo } = useSong();
+  const { SongInfo,setSongInfo} = useSong();
   console.log(SongInfo);
+  const remove = (song)=> {
+    const updatedSongs = SongInfo.filter((s) => s.audio !== song.audio)
+    setSongInfo(updatedSongs)
+  }
   return (
     <>
       <NavBar />
@@ -25,7 +29,9 @@ const FavSong = () => {
               <h2 className="font-semibold text-lg">{song.title}</h2>
               <h3 className="text-sm text-gray-600">By {song.subtitle}</h3>
               <audio className="mt-2 w-full" controls src={song.audio} />
+              <button onClick={() =>{remove(song)}}className="rounded-xl mt-2 h-10 w-40 bg-cyan-400 hover:bg-cyan-800">Dislike</button>
             </li>
+            
           ))}
         </ul>
       </div>

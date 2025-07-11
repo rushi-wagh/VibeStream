@@ -4,15 +4,15 @@ const SongContext = createContext();
 
 export const SongProvider = ({ children }) => {
   const [SongInfo, setSongInfo] = useState(() => {
-    const storedInfo = localStorage.getItem("songInfo");
+    const storedInfo = localStorage.getItem("SongInfo");
     return storedInfo ? JSON.parse(storedInfo) : [];
   });
 
   useEffect(() => {
     if (SongInfo) {
-      localStorage.setItem("Song", JSON.stringify(SongInfo));
+      localStorage.setItem("SongInfo", JSON.stringify(SongInfo));
     } else {
-      localStorage.removeItem("Song");
+      localStorage.removeItem("SongInfo");
     }
   }, [SongInfo]);
 
