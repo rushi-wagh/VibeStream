@@ -7,8 +7,6 @@ const moodToQuery = {
   Energetic: "bollywood dance hits",
   Chill: "hindi lofi chill songs",
   Focus: "instrumental bollywood",
-  Motivational: "motivational bollywood songs",
-  Classic: "old hindi songs",
 };
 
 export const useFetchSongs = () => {

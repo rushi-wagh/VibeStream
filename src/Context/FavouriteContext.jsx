@@ -5,7 +5,7 @@ const SongContext = createContext();
 export const SongProvider = ({ children }) => {
   const [SongInfo, setSongInfo] = useState(() => {
     const storedInfo = localStorage.getItem("songInfo");
-    return storedInfo ? JSON.parse(storedInfo) : { song: "channa mereya" };
+    return storedInfo ? JSON.parse(storedInfo) : [];
   });
 
   useEffect(() => {
