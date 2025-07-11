@@ -8,9 +8,6 @@ const Landing = () => {
     <>
       <NavBar />
       <Hero/>
-   
-      
-      
     </>
   );
 };
