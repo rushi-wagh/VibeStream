@@ -1,7 +1,6 @@
 import {React,useState} from "react";
 import { useSong } from "../Context/FavouriteContext.jsx";
 import NavBar from "../Components/NavBar.jsx";
-import { themeByMood } from "../themeBymood/themeByMood.js";
 
 const FavSong = () => {
   const { SongInfo, setSongInfo } = useSong();
