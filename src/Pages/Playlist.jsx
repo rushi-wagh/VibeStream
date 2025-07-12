@@ -44,6 +44,7 @@ const Playlist = () => {
       <NavBar />
       <div className={`min-h-screen ${theme.bg} ${theme.text} p-6`}>
         <h2 className="text-2xl font-bold mb-6">Songs Based on Your Mood 🎵</h2>
+
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {songs.map((song, index) => (
             <li

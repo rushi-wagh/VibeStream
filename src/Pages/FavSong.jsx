@@ -14,14 +14,17 @@ const FavSong = () => {
     <>
       <NavBar />
       <div className="mt-5 ml-4">
-        <h2 className="text-3xl font-semibold font-serif mb-6">
-          Your Favourite Songs
+        <h2 className="text-3xl font-semibold font-serif mb-4 text-gray-700">
+          🎵 Your Favourite Songs
         </h2>
+        {SongInfo?.length === 0 && <h3 className="text-2xl font-semibold text-gray-600 italic m-6">
+          No Favourite Song added yet...
+        </h3>}
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {SongInfo.map((song, index) => (
             <li
               key={index}
-              className="p-4  shadow-md mt-2 border border-gray-200 rounded-md flex flex-col items-center"
+              className="p-4  shadow-md mt-2 border border-gray-200 rounded-md flex flex-col items-center hover:scale-110"
             >
               <img
                 src={song.image}
