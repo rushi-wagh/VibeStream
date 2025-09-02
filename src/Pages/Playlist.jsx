@@ -36,7 +36,7 @@ const Playlist = () => {
     console.log(SongInfo);
   }, [SongInfo]);
 
-  if (Loading) return <div className="bg-[#F7F7F7]"> <p className="font-semibold text-gray-800">Loading...</p> </div>;
+  if (Loading) return <div className="bg-[#F7F7F7] min-h-screen"> <p className="font-semibold text-gray-800">Loading...</p> </div>;
   if (error) return <p>Error: {error}</p>;
 
   return (
