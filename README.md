@@ -1,12 +1,43 @@
-# React + Vite
+# VibeStream 🎶
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VibeStream is a small music streaming app I’m building with **React + Vite**.  
+The goal is to keep it simple, fast, and easy to extend.  
 
-Currently, two official plugins are available:
+👉 Live: (https://vibestreamsongs.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## What’s inside?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (UI)
+- Vite (build + dev server)
+- ESLint (for keeping code clean)
+
+
+---
+
+## Project layout
+
+├── public/ 
+├── src/ 
+├── .env.sample
+├── eslint.config.js
+├── index.html
+├── vite.config.js
+└── package.json
+
+
+---
+
+## Run it locally
+
+Clone and install:
+```bash
+git clone https://github.com/rushi-wagh/VibeStream.git
+cd VibeStream
+npm install
+
+To see App on localhost run
+npm run dev
+
+
